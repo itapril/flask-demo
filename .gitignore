@@ -1,0 +1,12 @@
+*.pyc
+*.db
+dump.rdb
+
+
+# pycharm
+.idea/
+
+# Django stuff:
+*.log
+
+*.egg
