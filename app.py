@@ -1,11 +1,14 @@
 #-*- coding:utf-8 -*-
 import os
 from flask import Flask, jsonify
-from flask.ext.restful import Api, Resource
+from flask.ext.restful import Api, Resource, reqparse
 
 app = Flask(__name__)
 api = Api(app)
 
+
+parser = reqparse.RequestParser()
+parser.add_argument('task')
 
 tasks = [
     {
@@ -26,6 +29,11 @@ tasks = [
 class TaskAPI(Resource):
     def get(self):
         return jsonify({'tasks': tasks})
+
+    def put(self):
+        args = parser.parse_args()
+        task = {'task': args['task']}
+        return task, 201
 
 
 class ApiTest(Resource):
