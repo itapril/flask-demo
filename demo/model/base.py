@@ -6,8 +6,8 @@ from sqlalchemy import MetaData, inspect, func, text
 from sqlalchemy.ext.declarative import declarative_base
 # from tornado.util import ObjectDict
 
-from utils import sql
-from utils.classproperty import classproperty
+from demo.utils import sql
+from demo.utils.classproperty import classproperty
 
 __all__ = ['BaseModel']
 

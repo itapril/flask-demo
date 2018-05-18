@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 import setting
-import constants
+from demo import constants
 
 __all__ = ['get_session', 'remove_sessions', 'db_engine']
 

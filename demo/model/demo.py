@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from model.base import BaseModel
+from demo.model.base import BaseModel
 
 from datetime import datetime
 

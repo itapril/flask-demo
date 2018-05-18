@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from model.demo import DemoModel
+from demo.model.demo import DemoModel
+
 
 def get_demo_list():
     demos = DemoModel.list()
     return {city.name: city.id for city in demos}
+
 
 def test_add():
     add_data_dict = dict(
