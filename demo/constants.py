@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 import os
 
 DEBUG = (os.environ.get('ENV', 'dev') == 'dev')

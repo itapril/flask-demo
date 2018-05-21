@@ -1,5 +1,4 @@
 from demo.model.demo import DemoModel
-from flask import jsonify
 from demo.handler.resp import base_resp
 
 

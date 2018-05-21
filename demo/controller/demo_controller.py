@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask.ext.restful import Resource, abort, marshal_with
 from demo.utils.parsers.demo import demo_post_parser,demo_id_parser
 from demo.handler.demo import create_demo, list_demo

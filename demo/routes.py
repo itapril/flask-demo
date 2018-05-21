@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from demo import app
 from flask.ext.restful import Api
 from demo.controller.login_controller import Login
