@@ -133,9 +133,7 @@ class BaseModel(_Base):
             query = query.offset(offset)
         if limit is not None:
             query = query.limit(limit)
-
         result = query.all()
-
         return result
 
     @classmethod
